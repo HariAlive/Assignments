@@ -1,0 +1,14 @@
+mycursor.execute("create database worker")
+
+mycursor.execute("create table worker(si_no INT, firstname TEXT, lastname TEXT,email varchar(30) UNIQUE , department varchar(20), salary INT, joindate DATE)")
+
+a = input("enter the si_no: ")
+b = input ("enter the firstname: ")
+c = input("enter the lastname: ")
+d = input("enter the email: ")
+e = input("enter the department: ")
+f = input("enter the salary: ")
+g = input("enter the joindate: ")
+query = "insert into worker(si_no,firstname,lastname,email,department,salary,joindate) values(%s,%s,%s,%s,%s,%s,%s)"
+mycursor.execute(query,(a,b,c,d,e,f,g))
+mydb.commit()
