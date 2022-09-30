@@ -1,3 +1,3 @@
 # Assignments
-sql 1 is the database with all required fields
-sql2, sql3, sql4 is screenshots of Task 1
+1. Python file handling, email and password validation and database creation
+2. SQL database creation and handling of queries
